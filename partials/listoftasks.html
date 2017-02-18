@@ -1,0 +1,25 @@
+
+
+<h3>Task</h3>
+<div  ng-controller="taskList">
+    <div>
+        <table class="table">
+            <thead>
+                <th width="10%;">Chech</th>
+                <th width="40%;">Name</th>
+                <th width="25%;">Dead Line</th>
+                <th width="25%;">Important</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat = "task in tasks | orderBy: 'taskdeadline'| orderBy: 'taskimportance'">
+                    <td><input type="checkbox" ng-checked="boxChecked(task)"></td>
+                    <td class="task">{{task.taskname}}</td>
+                    <td>{{task.taskdeadline}}</td>
+                    <td>{{task.taskimportance}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="button" class="btn btn-default" ng-click="addTask()">Add Task</button>
+</div>

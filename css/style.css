@@ -1,0 +1,47 @@
+header {
+    background: #2db34a;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    position: relative;
+    right: 0;
+    text-align: center;
+
+}
+
+footer {
+    background: #2db34a;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+}
+
+.row {
+    display: block;
+    position: relative;
+}
+
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.task {
+    text-align: left;
+}
+
+
+tbody tr {
+    background: #B8FAFF;
+}
